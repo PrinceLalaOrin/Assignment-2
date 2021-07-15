@@ -1,0 +1,127 @@
+/* fonts for heading tag */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+.top-banner h1, .photo-details h3{
+    font-family: 'Poppins', sans-serif;
+}
+.top-banner h1{
+    color: white;
+}
+
+/* fonts for paragraph */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+p{
+    /* font-family: 'Poppins', sans-serif; */
+    
+}
+
+/* top banner style */
+.top-banner{
+    margin-bottom: 70px;
+}
+.banner-details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(39, 68, 155);
+}
+.live-option{
+    color: white;
+    font-weight: 10px;
+    background-color: #E02C6D;
+    border-radius: 5px;
+    padding: 10px 24px;
+}
+.main-poster img{
+    width: 556.01px;
+    height: 438px;
+    margin-top: 4px;
+    transform: translate(90px);
+}
+.banner-details:hover .main-poster{
+    transform: translate(-60px);
+}
+
+/* players style */
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+.photo-album{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+}
+.photo-frame{
+    width: 330px;
+    height: 474px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+.photo img{
+    width:330px;
+    height: 256px;
+}
+.photo-details{
+    padding-left: 6px;
+}
+.photo-details p{
+    color:#6C6C6C;
+}
+
+/* Ending-part */
+.last-part{
+    margin-top: 30px;
+}
+.logo img{
+    width: 483.87px;
+    height: 110px;
+    display: block;
+    margin: 0 auto;
+}
+.center-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.center-icon a{
+    width: 32px;
+    height: 32px;
+    margin-left: 10px;
+}
+.copy-right{
+    text-align: center;
+}
+
+/* media queries */
+
+/* mobile devices */
+
+@media only screen and (max-width:688px) {
+    .banner-details{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .main-poster img{
+        width: 50%;
+        height: 50%;
+    }
+    .photo-album{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .photo-details {
+        height: 100%;
+    }
+    .photo-details p{
+        width: 90%;
+    }
+    .logo img{
+        width: 50%;
+        height: 50%;
+    }
+}
+
